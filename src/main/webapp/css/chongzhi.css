@@ -1,0 +1,26 @@
+.nav>a:nth-of-type(1){margin: 0px 45px 0px 50px;}
+.nav>a:nth-of-type(2){margin-right: 40px;}
+.nav>a:nth-of-type(3){margin-right: 35px;}
+.nav>a:nth-of-type(4){margin-right: 40px;}
+.nav>a:nth-of-type(5){color: #E80F3C;}
+#adv{width:100%;height: 38px; background: #FAFAFA; border: 1px solid #cccccc}
+#adv>div{font-weight: 600;color: #808080;width:1200px;height: 38px;line-height: 38px; margin: 0 auto}
+#adv>div>a{color: #808080}
+#adv>div>span{font-weight: 400}
+#content{width: 1200px;height: auto;margin: 25px auto 0px;}
+.look_dd>div{float: left}
+.look_dd>div:nth-of-type(1){height:35px; text-align: center;font-weight: 800;font-size:20px;width:90px;border-bottom:2px solid #E80F3C; }
+.look_dd>div:nth-of-type(2){line-height: 28px;width:1100px ;text-align: right;height: 35px;border-bottom:2px solid #E6E6E6;}
+.chongzhi{font-size: 18px;font-weight: 600 ;margin: 0 auto;height: auto;padding-top: 70px;width: 700px }
+.lie>input{height: 30px;text-align: center;font-size: 19px;font-weight: 600}
+.all1{width: 120px;margin-right: 20px;height: 30px;text-align: center;font-size: 19px;font-weight: 600}
+.money>input{height:30px;font-size: 19px;font-weight: 600;width: 120px}
+.input1{cursor: pointer;width:74px;font-weight: 600;height: 28px;    background: -webkit-linear-gradient(#FB3738,#D70101); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#FB3738,#D70101); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#FB3738,#D70101); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#FB3738,#D70101); /* 标准的语法 */;border: none;border-radius: 6px;color: white;font-size: 18px;}
+#tbss>ul>li{border-radius: 6px;cursor:pointer;width: 90px;font-weight: 600;font-size: 18px; color: black;margin-right: 20px;float:right; text-align: center;height: 30px;}
+#tbss>ul>li:nth-of-type(4){width: 70px}
+#tbss>ul>.clk{color: white;background: #E80F3C;}
+.width_r{width: 175px;text-align: right}
+.clk{}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+
+<mapper namespace="com.oracle.ebp.dao.OrderMapper">
+	
+	<!-- 添加订单 -->	
+	<insert id="addOrders" parameterType="order" useGeneratedKeys="true"
+	keyProperty="oid">
+		insert into orders(commitTime,amount,uid)values(#{commitTime},#{amount},#{uid})
+	</insert>
+
+	<!-- 查询指定用户的所有订单 -->
+	<select id="queryOrdersByUid" resultType="order" parameterType="int">
+		select oid,committime,amount,uid from orders where uid=#{0};
+	</select>
+	
+	
+	
+<!-- ======================管理员方法================================== -->	
+	
+	<!-- 自定义的查询订单，里面包含用户信息，票据信息！ -->
+	<resultMap type="order" id="order_map">
+		<result property="orderList.descs" column="descs"/>
+		<result property="orderList.amount" column="amount"/>
+		<result property="orderList.price" column="price"/>
+		<result property="user.username" column="username"/>
+		<result property="user.name" column="name"/>
+		<result property="user.idCard" column="idCard"/>
+	</resultMap>
+	
+	<!-- 根据订单时间分页查询订单 -->
+	<select id="queryOrdersByDatePage" resultMap="order_map">
+		SELECT * FROM orders o,USER u,orderlist l
+		WHERE o.uid=u.uid AND l.oid=o.oid and
+		o.commitTime between #{0} and #{1} limit #{2},#{3}
+	</select>
+	<!-- 根据订单时间查询订单数量 -->
+	<select id="queryOrderCountByDate" resultType="int">
+		SELECT count(u.uid) FROM orders o,USER u,orderlist l
+		WHERE o.uid=u.uid AND l.oid=o.oid and
+		o.commitTime between #{0} and #{1}
+	</select>
+	
+
+	<!-- 根据条件分页查询订单 -->
+	<select id="queryOrdersByCondition" resultMap="order_map">
+		SELECT * FROM orders o,USER u,orderlist l
+		WHERE o.uid=u.uid AND l.oid=o.oid and
+		<if test="#{0} !=null and #{0} !=0">
+			and o.oid like concat('%',#{0},'%') 
+		</if>
+		<if test="#{1} !=null and #{1} !=''">
+			and u.name like concat('%',#{1},'%') or u.username like concat('%',#{1},'%') 
+		</if>
+		<if test="#{2} !=null and #{2} !=''">
+			and u.idCard like concat('%',#{2},'%') 
+		</if>
+		limit #{3},#{4}
+	</select>
+	<!-- 根据条件查询订单数量 -->
+	<select id="queryOrdersCountByCondition" resultType="int">
+		SELECT count(o.uid) FROM orders o,USER u,orderlist l
+		WHERE o.uid=u.uid AND l.oid=o.oid and
+		<if test="#{0} !=null and #{0} !=0">
+			and o.oid like concat('%',#{0},'%') 
+		</if>
+		<if test="#{1} !=null and #{1} !=''">
+			and u.name like concat('%',#{1},'%') or u.username like concat('%',#{1},'%') 
+		</if>
+		<if test="#{2} !=null and #{2} !=''">
+			and u.idCard like concat('%',#{2},'%') 
+		</if>
+	</select>
+
+</mapper>

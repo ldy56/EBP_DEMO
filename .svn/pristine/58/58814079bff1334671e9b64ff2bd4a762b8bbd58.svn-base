@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/admincommon.css">
+    <link rel="stylesheet" href="css/adminindex.css">
+
+</head>
+<body>
+<div id="login">
+    <div class="headerdiv">
+        <div class="login_l">
+            欢迎您登录系统，<a href="">zhangsan</a>
+        </div>
+            <div class="login_r">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/admin/close.png" alt="">&nbsp;<a href="adminindexlogin.html">退出</a></div>
+    </div>
+</div>
+<div id="logo">
+    <div>
+        <div class="logo_l">
+
+        </div>
+        <div class="logo_r">
+            <span>服务热线&nbsp;:&nbsp;</span><span>400-9968-888</span>
+        </div>
+    </div>
+</div>
+<div id="content">
+    <div id="content_l">
+        <div class="l_top">
+            <div>
+                <img src="images/admin/head_portrait.png" alt=""></div>
+            <div>
+                <span>用户&nbsp;&nbsp;:&nbsp;zhangsan</span><br>
+                <span>角色&nbsp;&nbsp;:&nbsp;管理员</span>
+            </div>
+        </div>
+        <div class="l_bottom" id="l_bottom">
+            <ul>
+                <li class="active"><img class="img_b" src="images/admin/icon1.png" alt=""><span>首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</span></li>
+                <li><img class="img_b" src="images/admin/icon02.png" alt=""><span>票项管理</span></li>
+                <li><img class="img_b" src="images/admin/icon03.png" alt=""><span>用户管理</span></li>
+                <li><img class="img_b" src="images/admin/icon04.png" alt=""><span>订单管理</span></li>
+                <li><img class="img_b" src="images/admin/icon05.png" alt=""><span>退&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;出</span></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content_r">
+        <div class="content_rt">
+            <div><img src="images/admin/lock.png" alt=""></div>
+            <div class="time">
+                <div>当前时间&nbsp;:&nbsp;<span id="timer"></span></div>
+                <div><h3>zhangsan</h3></div>
+                <div>欢迎进入网站后台管理中心</div>
+            </div>
+        </div>
+        <div class="message">您的相关信息</div>
+        <div class="xinxi">
+            <ul>
+                <li>登录帐号&nbsp;:&nbsp;<span>zhangsan</span></li>
+                <li>真实姓名&nbsp;:&nbsp;<span>zhangsan</span></li>
+                <li>用户角色&nbsp;:&nbsp;<span>管理员</span></li>
+                <li>上次登录&nbsp;:&nbsp;<span>2017-01-10&nbsp;&nbsp;17&nbsp;:&nbsp;00</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <p>版权所有碟派科技有限公司</p>
+    <p>备案号:京-3032152541</p>
+</div>
+</body>
+<script src="js/adminindex.js">
+</script>
+</html>

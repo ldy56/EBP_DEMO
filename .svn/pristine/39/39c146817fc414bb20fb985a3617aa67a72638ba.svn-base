@@ -1,0 +1,36 @@
+input{
+    border: 0px;
+    text-align: center;
+    width: 50px;
+}
+#t{
+    text-align: center;
+}
+.tianjia{margin:40px 0 0 32px;font-weight: 600; font-size: 20px;text-align: center}
+.tianjia>span:nth-of-type(2){margin-left: 30px;}
+.tianjia>input{font-size: 18px;font-weight: 600;height: 28px;}
+.tianjia>input:nth-of-type(1),.tianjia>input:nth-of-type(2){width:128px;border: 1px solid #cccccc; }
+.tianjia>input:nth-of-type(3){width: 76px;margin-left:15px }
+.tianjia>input:nth-of-type(4){width: 102px;margin-left: 25px}
+.tianjia>h1{color: #D70504;}
+.tbes{margin: 30px 0 0 32px;}
+#t{font-weight: 600;font-size: 15px;border-color: #cccccc}
+#trt{color: white;}
+#t td{height: 38px;}
+#t input{width: 30px }
+
+.td_font{color:#D70504;}
+.butn{width: 500px;height: 45px;position: absolute;left: 210px;bottom: 40px;}
+.butn>ul>li{float: left;margin: 0px 10px;text-align: center}
+.btn_ul>li:nth-of-type(1)>input, .btn_ul>li:nth-of-type(7)>input{width: 66px;height: 26px;font-weight: 600}
+.btn_ul a{
+    color: black; font-weight: 600;line-height: 28px}
+.btn_ul>li:nth-of-type(8)>input{width:41px;height: 26px }
+.next_color{width:32px ;height:26px ;background: #F22752;border: 1px solid #cccccc}
+.next_color>a{color: white;}
+#content_r{position: relative;}
+.btn1{cursor: pointer;width:85px;font-weight: 600;height: 28px;    background: -webkit-linear-gradient(#FB3738,#D70101); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#FB3738,#D70101); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#FB3738,#D70101); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#FB3738,#D70101); /* 标准的语法 */;border: none;border-radius: 6px;color: white;font-size: 18px;}
+.btnbox{margin: 20px 0 0 665px}

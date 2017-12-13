@@ -1,0 +1,45 @@
+.nav>a:nth-of-type(1){margin: 0px 45px 0px 50px;}
+.nav>a:nth-of-type(2){margin-right: 40px;}
+.nav>a:nth-of-type(3){margin-right: 35px;}
+.nav>a:nth-of-type(4){margin-right: 40px;}
+#adv{width:100%;height: 38px; background: #FAFAFA; border: 1px solid #cccccc}
+#adv>div{font-weight: 600;color: #808080;width:1200px;height: 38px;line-height: 38px; margin: 0 auto}
+#adv>div>a{color: #808080}
+#adv>div>span{font-weight: 400}
+#content{width: 1200px;height: 460px;margin: 0 auto;position: relative}
+.trs{color: white}
+.trs2,.trs3{font-weight: 600}
+.tabs{width:1150px;height: auto;margin: 30px auto 20px}
+.tfont{font-weight: 600;font-size: 18px;}
+.tbsbtn{display: inline-block;cursor: pointer;width: 25px;background: white;border: 1px solid #cccccc;font-size: 18px;font-weight: 600;margin-left: -50px;}
+.table2{margin-top: 20px;position: absolute;top:260px;left:25px}
+.butn{width: 500px;height: 45px;position: absolute;bottom: 0px;left: 345px;}
+.butn>ul>li{float: left;margin: 0px 10px;text-align: center}
+.btn_ul>li:nth-of-type(1)>input, .btn_ul>li:nth-of-type(7)>input{cursor: pointer;width: 66px;height: 26px;font-weight: 600}
+.btn_ul a{
+    color: black; font-weight: 600;line-height: 28px}
+.btn_ul>li:nth-of-type(8)>input{width:41px;height: 26px }
+.next_color{width:32px ;height:26px ;background: #F22752;border: 1px solid #cccccc}
+.next_color>a{color: white;}
+.trs2>td>span{display: inline-block;font-size: 18px;}
+.trs2>td>span:nth-of-type(1){margin: 0 0 0 50px}
+.trs2>td>span:nth-of-type(2){margin-left:185px}
+.trs2>td>span:nth-of-type(3){margin-left:251px}
+.trs2>td>span:nth-of-type(4){margin-left:159px}
+.trs2>td>span:nth-of-type(5){margin-left:160px}
+.trs2>td>span:nth-of-type(6){margin: 0 0 0 50px}
+.trs2>td>span:nth-of-type(7){margin-left:130px}
+.trs2>td>span:nth-of-type(8){margin-left:186px}
+.trs2>td>span:nth-of-type(9){margin-left:190px}
+.trs2>td>span:nth-of-type(10){margin-left:186px}
+.trs2{text-align: center}
+.input1{cursor: pointer;width:74px;font-weight: 600;height: 28px;    background: -webkit-linear-gradient(#FB3738,#D70101); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#FB3738,#D70101); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#FB3738,#D70101); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#FB3738,#D70101); /* 标准的语法 */;border: none;border-radius: 6px;color: white;font-size: 18px;}
+
+.input2{margin:0 50px;cursor: pointer;width:85px;font-weight: 600;height: 28px;    background: -webkit-linear-gradient(#FB3738,#D70101); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#FB3738,#D70101); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#FB3738,#D70101); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#FB3738,#D70101); /* 标准的语法 */;border: none;border-radius: 6px;color: white;font-size: 18px;}
+

@@ -1,0 +1,20 @@
+
+.content_rt{margin: 65px 0 0 74px;
+    width:420px;height: 114px; }
+.content_rt>div{float: left}
+.content_rt>div:nth-of-type(2){font-size: 18px;font-weight: 600}
+.time{margin-left: 55px}
+.time>div{padding-top: 14px;}
+.message{width:850px;height: 35px;line-height: 35px;border: 1px solid #cccccc;
+    text-align: center;font-weight: 600;font-size: 18px;clear: both;margin: 80px auto 0;
+    background: -webkit-linear-gradient(#FBFBFB,#DADADA); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#FBFBFB,#DADADA); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#FBFBFB,#DADADA); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#FBFBFB,#DADADA); /* 标准的语法 */
+}
+.xinxi{width:850px;height: 250px;border: 1px solid #cccccc;background: white;margin:17px auto 0;
+    font-size: 18px;font-weight: 600;
+}
+.xinxi>ul{margin:38px }
+.xinxi>ul>li{padding-top: 12px;}
+.xinxi>ul>li>span{color: #D40400}

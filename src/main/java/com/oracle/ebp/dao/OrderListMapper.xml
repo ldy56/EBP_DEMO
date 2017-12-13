@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+
+<mapper namespace="com.oracle.ebp.dao.OrderListMapper">
+	
+	<!-- 保存订单明细 -->
+	<insert id="addOrderList" parameterType="orderList" useGeneratedKeys="true"
+	keyProperty="oid">
+		insert into orderlist(descs,price,quantity,amount,oid)values
+		(#{descs},#{price},#{quantity},#{amount},#{oid})
+	</insert>
+	
+	<!-- 批量保存订单:待测试 -->
+	<insert id="addOrderLists" parameterType="orderList">
+		insert into orderlist(descs,price,quantity,amount,oid)values
+		 <foreach collection="list" item="item" index="index" separator="," >  
+        	(#{item.descs},#{item.price},#{item.quantity},#{item.amount},#{item.oid})  
+    	</foreach>
+		
+	</insert>
+	
+	<!-- 根据订单ID查询所有明细 -->
+	<select id="queryOrderListByOid" resultType="orderList" parameterType="int">
+		select * from orderlist where oid=#{oid};
+	</select>
+	
+	
+
+</mapper>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+
+<mapper namespace="com.oracle.ebp.dao.UserMapper">
+	
+	<!-- 用户登录 -->
+	<select id="loginUser" resultType="user" parameterType="string">
+		select * from user where username=#{0} and	password=#{1};
+	</select>
+
+	<!-- 帐号充值 -->	
+	<update id="topUpMoney" >
+		update user set balance=balance+#{0} where uid=#{1};
+	</update>
+	
+	<!-- 用户注册 -->
+	<insert id="registerUser" parameterType="user" useGeneratedKeys="true" keyProperty="uid">
+		insert into user(username,password,name,gender,age,idCard,address,telno)
+		values(#{username},#{password},#{name},#{gender},#{age},#{idCard},#{address},#{telno})
+	</insert>
+	
+	<!-- 用户结账 -->
+	<update id="summaryMoney">
+		update user set balance=balance-#{0} where uid=#{1};
+	</update>
+	
+	<!-- 根据ID修改个人信息 -->
+	<update id="updateUser" parameterType="user">
+		update user 
+		<set>
+			<if test="password != null">password=#{password},</if>
+			<if test="name != null">name=#{name},</if>
+			<if test="gender != null or gender !=0">gender=#{gender},</if>
+			<if test="age != null  or age !=0">age=#{age},</if>
+			<if test="idCard != null">idCard=#{idCard},</if>
+			<if test="telno != null">telno=#{telno}</if>
+		</set>
+		where uid=#{uid}
+	</update>
+
+<!-- ======================管理员方法================================== -->	
+	<!-- 根据用户注册日期分页查询用户 -->
+	<select id="queryUsersByDatePage" resultType="user">
+		select * from user where regtime between #{0} and #{1} limit #{2},#{3}
+	</select>
+
+	<!-- 根据用户注册日期查询用户数量 -->
+	<select id="queryUsersByDateCount" resultType="int">
+		select count(uid) from user where regtime between #{0} and #{1}
+	</select>
+	
+	<!-- 根据条件进行模糊查询数量 -->
+	<select id="queryUsersByCount" resultType="int">
+		select count(uid) from user where 1=1 
+		<if test="#{0} !=null and #{0} !=''">
+			and userName like concat('%',#{0},'%') 
+		</if>
+		<if test="#{1} !=null and #{1} !=''">
+			and idCard like concat('%',#{1},'%') 
+		</if>
+		<if test="#{2} !=null and #{2} !=''">
+			and telno like concat('%',#{2},'%') 
+		</if>
+	</select>
+	
+
+	<!-- 根据用户注册日期分页查询用户 -->
+	<select id="queryUsersByCondition" resultType="user">
+		select * from user where 1=1 
+		<if test="#{0} !=null and #{0} !=''">
+			and userName like concat('%',#{0},'%') 
+		</if>
+		<if test="#{1} !=null and #{1} !=''">
+			and idCard like concat('%',#{1},'%') 
+		</if>
+		<if test="#{2} !=null and #{2} !=''">
+			and telno like concat('%',#{2},'%') 
+		</if>
+		limit #{3},#{4}
+	</select>
+	
+	<!-- 根据用户ID修改状态 -->	
+	<update id="updateUserStatusById">
+		update user set status=#{0} where uid=#{1}
+	</update>
+
+
+</mapper>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/myshopping.css">
+
+</head>
+<body>
+<div id="login">
+    <div>
+        <div>Hi 欢迎访问跌派网！&nbsp;&nbsp;<a href="">[我的碟派]</a>&nbsp;&nbsp;&nbsp;<a href="">[我的订单]</a></div>
+        <div class="login_r"><a href="login.html">登录</a>丨<a href="zhuce.html">注册</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/admin/close.png" alt="">&nbsp;<a href="#">退出</a></div>
+    </div>
+</div>
+<div id="navgin">
+    <div class="navgin_left">
+        <div><img src="images/index/logo.png" alt=""></div>
+        <div><img src="images/index/fenlei.png" alt=""><a href="#">商品分类</a></div>
+    </div>
+    <div class="navgin_right">
+        <div class="search">
+        <input type="text" value="海贼王之黄金城" onfocus="value=''" ><input type="button" value="搜 索">
+            <p><a href="#">张惠妹&nbsp;&nbsp;</a><a href="#">梁静茹&nbsp;&nbsp;</a><a href="#">乐活超级票&nbsp;&nbsp;</a><a href="#">朴树&nbsp;&nbsp;</a><a href="#">画江湖之不良人&nbsp;&nbsp;</a><a href="">李尔王&nbsp;&nbsp;</a></p>
+        </div>
+       <div class="nav">
+           <a href="index.html">首页</a>
+           <a href="ticket.html">实时定票</a>
+           <a href="myshopping.html">我的定单</a>
+           <a href="VIPmessage.html">会员信息</a>
+           <a href="chongzhi.html">账户充值</a>
+           <a href="gouwuche.html"><img src="images/index/shop_cart.png" alt="">购物车</a>
+       </div>
+    </div>
+</div>
+<div id="adv">
+    <div>
+        <a href="index.html">碟派网</a><span>&nbsp;>&nbsp;</span><a href="">我的订单</a>
+    </div>
+</div>
+<div id="content">
+    <div class="mydd">
+        <input class="mysop btnbgr" type="button" value="我的订单"><input class="duihuan" type="button" value="积分兑换"><input class="hezuo" type="button" value="合作商户订单">
+        <div class="block">
+            <div class="srh">
+
+                <select class="all1">
+                        <option value="yi">全部订单</option>
+                        <option value="yi">全部订单</option>
+                        <option value="yi">全部订单</option>
+                        <option value="yi">全部订单</option>
+                        <option value="yi">全部订单</option>
+                        <option value="yi">全部订单</option>
+                </select>
+                <select class="all2">
+                    <option value="yi">近一个月订单</option>
+                    <option value="er">近两个月订单</option>
+                    <option value="san">近三个月订单</option>
+                </select>
+               <input type="text" class="all3" value="商品名称、商品编号、订单编号" onfocus="this.value=''"><input type="button" class="all4" value="查&nbsp;询">
+
+            </div>
+            <div class="tabs">
+                <table border="0" cellpadding="0" cellspacing="0" id="t">
+                   <tr bgcolor="#E80F3C" class="trs">
+                       <th width="150" height="40">序&nbsp;&nbsp;&nbsp;号</th>
+                       <th width="480">订单号</th>
+                       <th width="300">生成时间</th>
+                       <th width="220">金额（元）</th>
+
+                   </tr>
+                    <tr id="tr0" class="tfont" align="center">
+                        <td height="60"><a id="jian0" class="tbsbtn" type="button" onclick="tianjia(this,0)">+</a>&nbsp;&nbsp;&nbsp;&nbsp;1</td>
+                        <td>2389403840001</td>
+                        <td>2017-01-17</td>
+                        <td>188</td>
+                    </tr>
+                    <tr id="td0"  bgcolor="#F5F5F5"  class="trs2"></tr>
+                    <tr id="tr1" class="tfont" align="center">
+                        <td height="60"><a id="jian1" class="tbsbtn" onclick="tianjia(this,1)">+</a>&nbsp;&nbsp;&nbsp;&nbsp;2</td>
+                        <td>2389403840002</td>
+                        <td>2017-01-16</td>
+                        <td>287</td>
+                    </tr>
+                    <tr id="td1"  bgcolor="#F5F5F5"  class="trs2"></tr>
+                    <tr id="tr2" class="tfont" align="center">
+                        <td height="50"><a id="jian2" class="tbsbtn" onclick="tianjia(this,2)">-</a>&nbsp;&nbsp;&nbsp;&nbsp;3</td>
+                        <td>2389403840003</td>
+                        <td>2017-01-15</td>
+                        <td>300</td>
+                    </tr>
+                    <tr bgcolor="#F5F5F5"  class="trs2" id="td2">
+                        <td colspan="4" height="80"><span>序号</span><span>描述</span><span>单价</span><span>购票张数</span><span>金额</span><br><br>
+                        <span>1.1</span><span>《总有刁民想害朕》</span><span>50元</span><span>6</span><span>300元</span></td>
+                    </tr>
+                    <tr id="tr3" class="tfont" align="center">
+                        <td height="60"><a id="jian3" class="tbsbtn" onclick="tianjia(this,3)">+</a>&nbsp;&nbsp;&nbsp;&nbsp;4</td>
+                        <td>2389403840004</td>
+                        <td>2017-01-14</td>
+                        <td>280</td>
+                    </tr>
+                    <tr id="td3"  bgcolor="#F5F5F5"  class="trs2"></tr>
+                    <tr id="tr4" class="tfont" align="center">
+                        <td height="60"><a id="jian4" class="tbsbtn" onclick="tianjia(this,4)">+</a>&nbsp;&nbsp;&nbsp;&nbsp;5</td>
+                        <td>2389403840005</td>
+                        <td>2017-01-13</td>
+                        <td>146</td>
+                    </tr>
+                    <tr id="td4"  bgcolor="#F5F5F5"  class="trs2"></tr>
+                </table>
+
+            </div>
+            <div class="butn">
+                <ul class="btn_ul">
+                    <li><input type="button" value="上一页"></li>
+                    <li class="next_color"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><input type="button" value="下一页"></li>
+                    <li><input type="text"></li>
+                    <li><a href="#">GO</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="none1">
+            积分兑换
+        </div>
+        <div class="none1">
+        合作商户订单
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="order">
+        <ul class="ul1">
+            <li><a href="">订购方式</a></li>
+            <li><a href="">在线订购</a></li>
+            <li><a href="">电话订购</a></li>
+            <li><a href="">上门订购</a></li>
+            <li><a href="">大客户团体订购</a></li>
+            <li><a href="">碟派超级票订购</a></li>
+        </ul>
+        <ul class="ul1">
+            <li><a href="">配送方式</a></li>
+            <li><a href="">送货上门</a></li>
+            <li><a href="">电子票</a></li>
+            <li><a href="">上门自取</a></li>
+            <li><a href="">碟派自助机换票</a></li>
+        </ul>
+        <ul class="ul1">
+            <li><a href="">支付方式</a></li>
+            <li><a href="">在线支付</a></li>
+            <li><a href="">柜台付款</a></li>
+        </ul>
+        <ul class="ul1">
+            <li><a href="">碟派网微信</a></li>
+            <li><img src="images/index/qr_%20code1.png" alt=""></li>
+        </ul>
+        <ul class="ul1">
+            <li><a href="">碟派网触屏版</a></li>
+            <li><img src="images/index/qr_%20code2.png" alt=""></li>
+        </ul>
+        <ul class="ul1">
+            <li><a href="">账户安全</a></li>
+            <li><a href="">找回密码</a></li>
+            <li><a href="">账户注册</a></li>
+            <li><a href="">账户绑定</a></li>
+            <li><a href="">SSL安全证书</a></li>
+        </ul>
+        <ul class="ul1">
+            <li><a href="">售后服务</a></li>
+            <li><a href="">退换及缺货说明</a></li>
+            <li><a href="">发票帮助</a></li>
+            <li><a href="">订票服务条款</a></li>
+        </ul>
+        <ul class="ul2">
+            <li><a href="">特色服务</a></li>
+            <li><a href="">超级票</a></li>
+            <li><a href="">积分商城</a></li>
+            <li><a href="">票务系统</a></li>
+            <li><a href="">场馆库</a></li>
+            <li><a href="">演出订阅</a></li>
+        </ul>
+    </div>
+    <div class="act">
+        <ul>
+            <li>公司介绍</li>
+            <li>品牌识别</li>
+            <li>企业荣誉</li>
+            <li>联系方式</li>
+            <li>隐私声明</li>
+            <li>合作招商</li>
+            <li>招聘信息</li>
+            <li>网站地图</li>
+            <li class="border_n">友情链接</li>
+        </ul>
+    </div>
+    <div class="copy">
+        <br>
+        <p>版权所有&nbsp;大麦网&nbsp;Copyright&nbsp;2003-2016&nbsp;All&nbsp;Rights&nbsp;Reseverved</p>
+    </div>
+</div>
+</body>
+<script src="js/myshopping.js"></script>
+<script>
+
+</script>
+</html>

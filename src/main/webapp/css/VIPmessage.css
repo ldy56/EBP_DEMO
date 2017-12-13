@@ -1,0 +1,58 @@
+.nav>a:nth-of-type(1){margin: 0px 45px 0px 50px;}
+.nav>a:nth-of-type(2){margin-right: 40px;}
+.nav>a:nth-of-type(3){margin-right: 35px;}
+.nav>a:nth-of-type(4){margin-right: 40px;color: #E80F3C;}
+#adv{width:100%;height: 38px; background: #FAFAFA; border: 1px solid #cccccc}
+#adv>div{font-weight: 600;color: #808080;width:1200px;height: 38px;line-height: 38px; margin: 0 auto}
+#adv>div>a{color: #808080}
+#adv>div>span{font-weight: 400}
+#content{width: 1200px;height: auto;margin: 25px auto 0px;}
+.idmessage{width: 1200px;height:412px;
+    background-color: #F5F5F5; }
+.id_left{width: 345px;  height:298px;margin-left:110px;padding-top: 32px;float: left}
+.pic{width: 345px;height:126px }
+.pic>img{float: left}
+.adminm{width: 189px;height: auto;float:right;font-size: 18px;font-weight: 600}
+.adminm>p:nth-of-type(2),.adminm>p:nth-of-type(3),.adminm>p:nth-of-type(4){margin-top:10px; }
+.adminm>p>span{color: red}
+.adminm>div{margin-top: 10px}
+.adminm>div>input{cursor: pointer;font-weight: 600;height: 25px; background: -webkit-linear-gradient(#FB3738,#D70101); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#FB3738,#D70101); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#FB3738,#D70101); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#FB3738,#D70101); /* 标准的语法 */
+    border-radius: 6px;color: white;border: none;font-size: 18px;}
+.adminm>div>input:nth-of-type(1){width:74px;}
+.adminm>div>input:nth-of-type(2){width:98px;margin-left: 15px}
+.passwd{font-weight: 600;font-size: 18px;margin-top: 40px}
+.inpt>input{font-size: 18px;width: 238px;height: 30px;border-radius: 6px;border: 1px solid #cccccc;}
+.input1{cursor: pointer;width:74px;font-weight: 600;height: 25px;background: -webkit-linear-gradient(#FB3738,#D70101); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#FB3738,#D70101); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#FB3738,#D70101); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#FB3738,#D70101); /* 标准的语法 */
+    border-radius: 6px;color: white;border: none;font-size: 18px;}
+.id_right{font-weight: 600;font-size: 18px;padding-top: 32px;margin-left:30px;float: left }
+.id-hr{background: -webkit-linear-gradient(white,#cccccc, white); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(white,#cccccc, white); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(white,#cccccc, white); /* Firefox 3.6 - 15 */
+    background: linear-gradient(white,#cccccc, white); /* 标准的语法 */
+    float: left;width: 1px;height: 380px;padding-top: 32px;margin-left:142px;}
+.btndiv{position: relative}
+.input2{position: absolute;top:12px;left: 100px;}
+.input3{position: absolute;top:12px;left: 265px}
+.look_dd{
+    width:1200px;height: auto;margin: 20px auto 0;
+}
+.look_dd>div{float: left}
+.look_dd>div:nth-of-type(1){height:35px; text-align: center;font-weight: 800;font-size:20px;width:90px;border-bottom:2px solid #E80F3C; }
+.look_dd>div:nth-of-type(2){line-height: 28px;width:1110px ;text-align: right;height: 35px;border-bottom:2px solid #E6E6E6;}
+.look_dd>div:nth-of-type(2)>a{font-size: 14px;font-weight: 600;color:#808080;}
+.tabs{margin-top: 20px;margin-bottom: 120px}
+.trs2{color:#828282;font-weight: 600 }
+.table2{font-size: 15px;text-align: center}
+.btnc{
+    background: -webkit-linear-gradient(#FB3738,#D70101); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#FB3738,#D70101); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#FB3738,#D70101); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#FB3738,#D70101); /* 标准的语法 */
+    border-radius: 6px;color: white;
+}

@@ -1,0 +1,27 @@
+.nav>a:nth-of-type(1){margin: 0px 45px 0px 50px;}
+.nav>a:nth-of-type(2){margin-right: 40px;}
+.nav>a:nth-of-type(3){margin-right: 35px;}
+.nav>a:nth-of-type(4){margin-right: 40px;}
+.nav>a:nth-of-type(5){color: #E80F3C;}
+#adv{width:100%;height: 38px; background: #FAFAFA; border: 1px solid #cccccc}
+#adv>div{font-weight: 600;color: #808080;width:1200px;height: 38px;line-height: 38px; margin: 0 auto}
+#adv>div>a{color: #808080}
+#adv>div>span{font-weight: 400}
+#content{width: 1200px;height: auto;margin: 25px auto 0px;}
+.look_dd>div{float: left}
+.look_dd>div:nth-of-type(1){color:#E80F3C;height:35px; text-align: center;font-weight: 800;font-size:20px;width:102px;border-bottom:2px solid #E80F3C; }
+.look_dd>div:nth-of-type(2){line-height: 28px;width:1095px ;text-align: right;height: 35px;border-bottom:2px solid #E6E6E6;}
+.chongzhi{font-size: 18px;font-weight: 600 ;margin: 0 auto;height: auto;padding-top: 70px;width: 600px;position: relative }
+.chongzhi>h3{position: absolute;top:45px;left: -300px;}
+.lie>input{height: 30px;text-align: center;font-size: 19px;font-weight: 600}
+.chongzhi>table{margin-top: 20px}
+.all1{width: 120px;margin-right: 20px;height: 30px;text-align: center;font-size: 19px;font-weight: 600}
+.money>input{height:30px;font-size: 19px;font-weight: 600;width: 120px}
+.input1{cursor: pointer;width:85px;font-weight: 600;height: 28px;    background: -webkit-linear-gradient(#FB3738,#D70101); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#FB3738,#D70101); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#FB3738,#D70101); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#FB3738,#D70101); /* 标准的语法 */;border: none;border-radius: 6px;color: white;font-size: 18px;}
+.msg>img{float: left;margin-right: 40px;}
+.msg>ul>li{padding-top: 26px}
+.msg>ul>li:nth-last-child(2)>span{color: #FB3738}
+#block{display: inline-block;text-align: center;width: 73px}

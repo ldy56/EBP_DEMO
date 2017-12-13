@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+
+<mapper namespace="com.oracle.ebp.dao.TicketMapper">
+
+	<!-- 根据时间查询票据 -->
+	<select id="queryTicketsByDate" resultType="ticket">
+		select * from ticket where startTime between #{0} and #{1};
+	</select>
+	
+	<!-- 根据时间分页查询票据 -->
+	<select id="queryTicketsByDatePage" resultType="ticket">
+		select * from ticket where startTime between #{0} and #{1} limit #{2},#{3};
+	</select>
+
+	<!-- 根据ID查询票据 -->
+	<select id="queryTicketById" resultType="ticket">
+		select * from ticket where tid=#{id}
+	</select>
+	
+	<!-- 添加票据 -->
+	<insert id="addTicket" parameterType="ticket">
+		insert into ticket(descs,startTime,amount,balance,price,status)
+		values(#{descs},#{startTime},#{amount},#{balance},#{price},#{status})
+	</insert>
+
+	<!-- 根据ID修改票据 -->
+	<update id="updateTicketById" parameterType="ticket">
+		update ticket
+		<set>
+			<if test="descs !=null or descs !=''">descs=#{descs},</if>
+			<if test="startTime !=null"> startTime=#{startTime},</if>
+			<if test="amount !=0">amount=#{amount},</if>
+			<if test="balance !=0">balance=#{balance},</if>
+			<if test="price !=null ">price=#{price},</if>
+		</set>
+		where tid=#{tid}
+	</update>
+	
+	<!-- 根据ID修改状态 -->
+	<update id="updateStatusById" >
+		update ticket set status=#{0} where tid=#{1}
+	</update>
+	
+	
+	<!-- ===================管理员的方法=========================== -->
+	<!-- 根据票据日期分页查询票据 -->
+	<select id="queryTicketByDatePage" resultType="ticket">
+		select * from ticket where startTime between #{0} and #{1} limit #{2},#{3}
+	</select>
+
+	<!-- 根据票据日期分页查询票据总数 -->
+	<select id="queryTicketByDateCount" resultType="int">
+		select count(tid) from ticket where startTime between #{0} and #{1}
+	</select>
+	
+	<!-- 根据票据ID删除票据 -->
+	<delete id="deleteTicketById" parameterType="int">
+		delete from  ticket where tid=#{0}; 
+	</delete>
+	
+
+</mapper>	

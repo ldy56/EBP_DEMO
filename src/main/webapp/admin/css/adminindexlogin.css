@@ -1,0 +1,25 @@
+.right_top{text-align: center;padding-top: 10px}
+.right_top>h2{color: white}
+.denglu{width: 500px;height: 300px;margin: 50px auto;background: #4B92D9;border-radius: 6px}
+.right_l {
+    width: 205px;
+    height: 120px;
+    text-align: right;
+    padding-top: 30px;
+    float: left;
+    margin-top:5px;
+}
+
+.right_r {
+    font-weight: 600;
+    float: left;
+    padding-top: 35px;
+    padding-left: 20px;
+    text-align: center
+}
+.btn2,.btn1{width:74px;font-weight: 600;height: 28px;    background: -webkit-linear-gradient(#FB3738,#D70101); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#FB3738,#D70101); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#FB3738,#D70101); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#FB3738,#D70101); /* 标准的语法 */;border: none;border-radius: 6px;color: white;font-size: 18px;}
+.right_r tr{height: 30px}
+.ipt{height: 25px}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-config.dtd"> 
+
+<configuration>
+	
+	<!-- 配置别名 -->
+	<typeAliases> 
+		<typeAlias alias="user" type="com.oracle.ebp.domain.User"/> 
+		<typeAlias alias="ticket" type="com.oracle.ebp.domain.Ticket"/> 
+		<typeAlias alias="order" type="com.oracle.ebp.domain.Orders"/> 
+		<typeAlias alias="orderList" type="com.oracle.ebp.domain.OrderList"/> 
+		<typeAlias alias="admin" type="com.oracle.ebp.domain.AdminUser"/> 
+	</typeAliases>
+	
+	<!-- 引入其它配置文件 -->
+	<mappers>
+		<!-- resource:跟的是mapper配置文件的路径 -->
+		<mapper resource="com/oracle/ebp/dao/UserMapper.xml"/> 
+		<mapper resource="com/oracle/ebp/dao/AdminMapper.xml"/> 
+		<mapper resource="com/oracle/ebp/dao/OrderListMapper.xml"/> 
+		<mapper resource="com/oracle/ebp/dao/OrderMapper.xml"/> 
+		<mapper resource="com/oracle/ebp/dao/TicketMapper.xml"/> 
+	</mappers> 
+
+</configuration>
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/admincommon.css">
+    <link rel="stylesheet" href="css/adminTicket.css">
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="login">
+    <div class="headerdiv">
+        <div class="login_l">
+            欢迎您登录系统，<a href="">zhangsan</a>
+        </div>
+            <div class="login_r">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/admin/close.png" alt="">&nbsp;<a href="adminindexlogin.html">退出</a></div>
+    </div>
+</div>
+<div id="logo">
+    <div>
+        <div class="logo_l">
+
+        </div>
+        <div class="logo_r">
+            <span>服务热线&nbsp;:&nbsp;</span><span>400-9968-888</span>
+        </div>
+    </div>
+</div>
+<div id="content">
+    <div id="content_l">
+        <div class="l_top">
+            <div>
+                <img src="images/admin/head_portrait.png" alt=""></div>
+            <div>
+                <span>用户&nbsp;&nbsp;:&nbsp;zhangsan</span><br>
+                <span>角色&nbsp;&nbsp;:&nbsp;管理员</span>
+            </div>
+        </div>
+        <div class="l_bottom" id="l_bottom">
+            <ul>
+                <li><img class="img_b" src="images/admin/icon01.png" alt=""><span>首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</span></li>
+                <li class="active"><img class="img_b" src="images/admin/icon2.png" alt=""><span>票项管理</span></li>
+                <li><img class="img_b" src="images/admin/icon03.png" alt=""><span>用户管理</span></li>
+                <li><img class="img_b" src="images/admin/icon04.png" alt=""><span>订单管理</span></li>
+                <li><img class="img_b" src="images/admin/icon05.png" alt=""><span>退&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;出</span></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content_r">
+        <div class="tianjia">
+            <span>起始日期&nbsp;:&nbsp;</span><input type="text" value="2017-01-10">
+            <span>终止日期&nbsp;:&nbsp;</span><input type="text" value="2017-01-19">
+            <input type="button" class="btnc" value="查&nbsp;询">
+            <input type="button" class="btnc" value="增加票项" onclick="tianjia()"></div>
+        <div class="tbes">
+            <table border="1" cellspacing="0" cellpadding="0" id="t">
+                <tr bgcolor="#808080" id="trt">
+                    <td width="58" height="38">编号</td>
+                    <td width="145">描述</td>
+                    <td width="148">时间</td>
+                    <td width="83">总张数（张）</td>
+                    <td width="95">剩余票数（张）</td>
+                    <td width="68">单价(元)</td>
+                    <td width="67">状态</td>
+                    <td width="177"></td>
+                </tr>
+                <tr id="tr0">
+                    <td height="38">1</td> <td>《总有刁民想害朕》</td> <td>2017-01-15&nbsp;20&nbsp;:&nbsp;00</td> <td>300</td>
+                    <td>100</td>
+                    <td>50.00</td>
+                    <td>售票中</td>
+                    <td><input class="btnc" type="button" value="删除" onclick="shanchu(0)"><input class="btnc" type="button" value="修改" onclick="xiugai(0)"></td>
+                </tr>
+                <tr id="tr1">
+                    <td height="38">2</td> <td>《28岁未成年》</td> <td>2017-01-14&nbsp;19&nbsp;:&nbsp;00</td> <td>400</td>
+                    <td>120</td>
+                    <td>90.00</td>
+                    <td>售票中</td>
+                    <td><input class="btnc" type="button" value="删除" onclick="shanchu(1)"><input class="btnc" type="button" value="修改" onclick="xiugai(1)"></td>
+                </tr>
+                <tr id="tr2">
+                    <td height="38">3</td> <td>《深海浩劫》</td> <td>2017-01-12&nbsp;20&nbsp;:&nbsp;00</td> <td>500</td>
+                    <td>230</td>
+                    <td>99.00</td>
+                    <td class="td_font">已停售</td>
+                    <td><input class="btnc" type="button" value="删除" onclick="shanchu(2)"><input class="btnc" type="button" value="修改" onclick="xiugai(2)"></td>
+                </tr>
+
+            </table>
+            <div class="butn">
+                <ul class="btn_ul">
+                    <li><input class="firstbtn" type="button" value="首&nbsp;页"></li>
+                    <li class="next_color"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><input class="firstbtn" type="button" value="末&nbsp;页"></li>
+                    <li><input class="intext" type="text"></li>
+                    <li><a href="#">GO</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <p>版权所有碟派科技有限公司</p>
+    <p>备案号:京-3032152541</p>
+</div>
+</body>
+<script src="js/admincommon.js"></script>
+<script src="js/adminTicket.js"></script>
+
+</html>
